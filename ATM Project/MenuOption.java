@@ -15,7 +15,7 @@ public class MenuOption extends Account{
                 details.put(475632147,6489);
                 details.put(874521678,1498);
 
-                System.out.println("Welcom to the ATM Machine!");
+                System.out.println("Welcome to the ATM Machine!");
 
                 System.out.print("Enter Your Account Number : ");
                 setAccountNumber(sc.nextInt());
@@ -25,7 +25,7 @@ public class MenuOption extends Account{
 
             }catch(Exception e){
                 System.out.println("\nPlease enter only numbers\n");
-                // checkLogin = false;
+                checkLogin = false;
             }
             for(Entry<Integer, Integer> entry : details.entrySet()){
                 if(entry.getKey() == getAccountNumber() && entry.getValue() == getPinNumber()){
